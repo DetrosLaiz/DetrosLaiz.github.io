@@ -23,6 +23,7 @@
 body {
     background-color: #2D333B;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font03);
 }
 
 /* MENU */
@@ -138,7 +139,6 @@ main {
 }
 
 .d1 .content > h1 {
-    font-family: var(--font03);
     border: 1px dashed rgb(28, 162, 146);
     border-right: 1px solid rgb(28, 162, 146);
     border-radius: 5px 0 0 5px;
@@ -154,7 +154,6 @@ main {
     border: 1px dashed rgb(28, 162, 146);
     border-left: 0px;
     border-radius: 0 5px 5px 0;
-    font-family: var(--font03);
     text-align: left;
     padding: 27px 16px; /* mudar quando mudar o texto*/
     margin: auto;
@@ -187,7 +186,7 @@ main {
 .flex-container > div{
     background-color: #931414;
     width: 460px;
-    height: 500px;
+    height: 600px;
     margin: auto;
     text-align: center;
 }
@@ -204,7 +203,7 @@ main {
 
 footer {
     padding: 10px;
-    color: var(--color02);
-    background-color: var(--color03);
+    color: white;
+    background-color: #282f3a;
     text-align: center;
 }
