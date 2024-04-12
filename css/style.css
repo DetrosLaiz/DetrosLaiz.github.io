@@ -20,8 +20,9 @@
     padding: 0;
 }
 
-.clear {
-    clear: both;
+body {
+    background-color: #2D333B;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* MENU */
@@ -78,7 +79,7 @@ menu li a:hover{
     max-height: calc(100vh - 55px);
     /* height: 100vh; */
     font-family: var(--font03);
-    background-color: #1C2128;
+    background-color: #1c2128;
     width: 55px;
     margin-right: auto;
     display: flex;
@@ -102,17 +103,71 @@ menu li a:hover{
 
 .sidebar a:hover {
     background-color: #2D333B;
-    ;
     border-radius: 5px;
 }
 
 /* BODY */
 
-hr {
-    background-color: #292a36;
-    height: 1px;
-    margin: 0;
-    border: none;
+main {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    overflow-y: auto;
+}
+
+.home {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 55px;
+    height: 100vh;
+    width: 95.9%;
+}
+
+.home > .d1 {
+    display: flex;
+    width: 750px;
+    height: 90%;
+    margin: auto;
+    margin: 2% 50px 0 50px; /* top, right, bottom, left*/
+}
+
+.d1 .content {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 50%;  
+}
+
+.d1 .content > h1 {
+    font-family: var(--font03);
+    border: 1px dashed rgb(28, 162, 146);
+    border-right: 1px solid rgb(28, 162, 146);
+    border-radius: 5px 0 0 5px;
+    padding: 75.5px 30px;
+    /* height: 30%; */
+    color: white;
+    font-size: 35px;
+    margin: auto 0px;
+    text-align: left; 
+}
+
+.d1 .content p {
+    border: 1px dashed rgb(28, 162, 146);
+    border-left: 0px;
+    border-radius: 0 5px 5px 0;
+    font-family: var(--font03);
+    text-align: left;
+    padding: 27px 16px; /* mudar quando mudar o texto*/
+    margin: auto;
+    color: white;
+}
+
+.home > .d2 {
+    display: flex;
+    background-color: #931414;
+    width: 610px;
+    height: 90%;
+    margin: 2% 50px 0 0px;
+    text-align: center;
 }
 
 .ini {
@@ -121,17 +176,6 @@ hr {
     height: 100vh;
     text-align: center;
     margin: auto;
-}
-
-body {
-    background-color: #eee;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-    max-width: 1000px;
-    margin: 50px auto 0;
-    overflow-y: auto;
 }
 
 .flex-container {
@@ -154,4 +198,13 @@ main {
 
 .text-div > p {
     line-height: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 10px;
+    color: var(--color02);
+    background-color: var(--color03);
+    text-align: center;
 }
