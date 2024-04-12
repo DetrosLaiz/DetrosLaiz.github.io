@@ -33,11 +33,14 @@ nav ul li {
 
 menu {
     background-color: #1C2128;
-    height: 55px;
+    height: 55px; 
     font-family: var(--font03);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    
 }
 
 nav {
@@ -49,7 +52,7 @@ nav {
 menu li {
     display: inline-block;
     height: 55px;
-    line-height: 53px;
+    line-height: 55px;
 }
 
 menu li a {
@@ -60,23 +63,24 @@ menu li a {
 }
 
 menu li a:hover{
-    background-color: #768d99;
+    background-color: #2D333B;
     border-radius: 5px;
-    color: black;
 }
 
 /* SIDEBAR */
 
 .sidebar {
-    position: sticky;
-    top: 55px; 
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0; 
     overflow-y: auto;
     max-height: calc(100vh - 55px);
+    /* height: 100vh; */
     font-family: var(--font03);
     background-color: #1C2128;
-    max-width: 55px;
-    height: 100vh;
-    margin: left;
+    width: 55px;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,16 +95,15 @@ menu li a:hover{
     color: white;
     text-decoration: none;
     display: block;
-    padding: 30px 0;
-    width: 100%;
+    padding: 20px 18px;
+    /* width: 100%; */
     text-align: center;
 }
 
 .sidebar a:hover {
-    background-color: #768d99;
+    background-color: #2D333B;
     ;
     border-radius: 5px;
-    color: black;
 }
 
 /* BODY */
@@ -127,9 +130,9 @@ body {
 
 main {
     max-width: 1000px;
-    margin: auto;
+    margin: 50px auto 0;
+    overflow-y: auto;
 }
-
 
 .flex-container {
    display: flex;
