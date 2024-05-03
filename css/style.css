@@ -72,20 +72,31 @@ menu li a:hover{
 /* SIDEBAR */
 
 .sidebar {
-    position: fixed;
-    top: 55px;
-    left: 0;
-    bottom: 0; 
-    overflow-y: auto;
-    max-height: calc(100vh - 55px);
-    /* height: 100vh; */
-    font-family: var(--font03);
-    background-color: #0a0a0a;
+    position: sticky;
+    /* top: 55px;  */
+    height: calc(100vh - 55px);
     width: 55px;
-    margin-right: auto;
+    font-family: var(--font03);
+    
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    /* top: 55px; */
+    bottom: 0;
+    width: 55px;
+    background-color: #0a0a0a;
+    z-index: -1;
+}
+
+.sidebar:not(:hover)::before {
+    display: none; /* oculta a sobreposição quando a barra lateral não está em foco (hover) */
 }
 
 .op {
@@ -118,7 +129,7 @@ main {
 .home {
     background-color: #0a0a0a;
     background: linear-gradient( #0a0a0a 65%, #121212 );
-    background-color: #1a242f;
+    /* background-color: #1a242f; */
     display: flex;
     margin-top: 55px;
     /* margin-left: 55px; */
@@ -133,7 +144,6 @@ main {
     height: 65%;
     margin: auto;
     margin: 2% 50px 0 50px; /* top, right, bottom, left*/   
-    /* background-color: rgb(57, 40, 17); */
 }
 
 .d1 .content {
