@@ -148,34 +148,35 @@ main {
     display: flex;
     margin: auto;
     width: 90%;
-    height: 50%;  
+    height: 50%;
+    color: white;
 }
 
-.d1 .content > h1 {
+.content #hello {
     border: 1px dashed #1ca292;
     border-right: 1px solid #1ca292;
     border-radius: 5px 0 0 5px;
-    padding: 10% 5%;
     color: white;
-    font-size: 35px;
-    margin: auto 0px;
-    text-align: left; 
+    background-color: #1a242f;
+    padding: 5.4%;
+    font-size: 15px;
 }
 
-.d1 .content p {
-    border: 1px dashed rgb(28, 162, 146);
-    border-left: 0px;
-    border-radius: 0 5px 5px 0;
-    text-align: left;
-    padding: 5.7% 5%;
-    /* padding: 27px 16px; mudar quando mudar o texto */
-    margin: auto;
+.content #text {
+    border: 1px dashed #1ca292;
+    border-left: none;
     color: white;
+    background-color: #1a242f;
+    font-size: 15px;
+    padding: 2%;
+}
+
+#hello h1 {
+    margin: auto 0;
 }
 
 .home > .d2 {
     border: 1px dashed #1ca292;
-    display: flex;
     box-sizing: border-box;
     width: 50%;
     height: 65%;
