@@ -124,66 +124,74 @@ main {
     color: white;
 }
 
+/* first page */
+
 .home {
     background-color: #0a0a0a;
     background: linear-gradient( #0a0a0a 65%, #121212 );
     /* background-color: #1a242f; */
     display: flex;
     margin-top: 55px;
-    /* margin-left: 55px; */
     height: 125vh;
-    /* width: 95.9%; */
     width: 100%;
+    flex-direction: row;
 }
 
-.home > .d1 {
+.d1, .d2 {
+    order: 2;
+    background-color: #b52e2e;
     display: flex;
-    width: 80%;
+    margin: 1%;
     height: 65%;
-    margin: auto;
-    margin: 2% 50px 0 50px; /* top, right, bottom, left*/   
+}
+
+.d1 {
+    width: 60%;
 }
 
 .d1 .content {
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 95%;
     height: 50%;
     color: white;
+    margin: auto;
 }
 
-.content #hello {
+#hello, #text {
+    display: flex;
     border: 1px dashed #1ca292;
+    font-size: 15px;
+}
+
+#hello {
     border-right: 1px solid #1ca292;
     border-radius: 5px 0 0 5px;
-    color: white;
     background-color: #1a242f;
-    padding: 5.4%;
-    font-size: 15px;
+    padding: 5%;
 }
 
-.content #text {
-    border: 1px dashed #1ca292;
+#text {
     border-left: none;
-    color: white;
+    border-radius: 0 5px 5px 0;
     background-color: #1a242f;
-    font-size: 15px;
-    padding: 2%;
+    padding: 5%;
 }
 
-#hello h1 {
+#hello h1, p {
     margin: auto 0;
 }
+/* 
+@media screen and (max-width: 768px) {
+    .d1,
+    .d2 {
+        width: 100%; 
+    }
+    .d2 {
+        order: 2;
+    }
+} */
 
-.home > .d2 {
-    border: 1px dashed #1ca292;
-    box-sizing: border-box;
-    width: 50%;
-    height: 65%;
-    margin: 2% 50px 0 0px;
-    text-align: center;
-    color: white;
-}
 
 .ini {
     background-color: #b52e2e;
