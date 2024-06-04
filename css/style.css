@@ -1,38 +1,29 @@
 /* IMPORT */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 /* VARIABLES */
-
     :root {
         --font01: 'Inter', sans-serif;
         --font02: 'Ubuntu Mono', monospace;
         --font03: 'DM Mono', monospace;
     }
-
 /* GLOBAL */
-
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #121212;
     font-family: Arial, Helvetica, sans-serif;
     font-family: var(--font03);
 }
-
 /* MENU */
-
 nav ul,
 nav ul li {
     list-style: none;
 }
-
 menu {
     background-color: #0a0a0a;
     height: 55px; 
@@ -44,33 +35,27 @@ menu {
     z-index: 1000;
     
 }
-
 nav {
     max-width: 1000px;
     margin: auto;
     text-align: center;
 }
-
 menu li {
     display: inline-block;
     height: 55px;
     line-height: 55px;
 }
-
 menu li a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 0 30px;
 }
-
 menu li a:hover{
     background-color: #1a242f;
     border-radius: 5px;
 }
-
 /* SIDEBAR */
-
 .sidebar {
     position: sticky;
     height: calc(100vh - 55px);
@@ -83,7 +68,6 @@ menu li a:hover{
     align-items: center;
     justify-content: flex-start;
 }
-
 .sidebar::before {
     content: '';
     position: absolute;
@@ -92,16 +76,13 @@ menu li a:hover{
     background-color: #0a0a0a;
     z-index: -1;
 }
-
 .sidebar:not(:hover)::before {
     display: none; /* oculta a sobreposição quando a barra lateral não está em foco (hover) */
 }
-
 .op {
     max-height: 50vh;
     margin: auto;
 }
-
 .sidebar a {
     color: white;
     text-decoration: none;
@@ -109,44 +90,49 @@ menu li a:hover{
     padding: 20px 18px;
     text-align: center;
 }
-
 .sidebar a:hover {
     background-color: #1a242f;
     border-radius: 5px;
 }
 
-/* BODY */
 
+/* BODY */
 main {
     max-width: 1000px;
     margin: 0 auto 0;
     overflow-y: auto;
     color: white;
 }
-
 /* first page */
-
 .home {
     background-color: #0a0a0a;
     background: linear-gradient( #0a0a0a 65%, #121212 );
-    /* background-color: #1a242f; */
     display: flex;
     margin-top: 55px;
     height: 125vh;
     width: 100%;
     flex-direction: row;
+    color: white;
+}
+
+.d1, .d2 {
+    max-width: 50%;
+    margin: 16% 30px; /* top, right, bottom, left */
+    text-align: center;
+}
+
+.d1 {
+    border: 1px dashed darkcyan; 
 }
 
 
 /* FOOTER */
-
 footer {
     margin-top: 2%;
     height: 60px;
     color: white;
     text-align: center;
 }
-
 footer hr {
     margin: auto;
     border-top: 1px solid #1ca292;
