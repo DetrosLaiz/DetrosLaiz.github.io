@@ -2,15 +2,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Laiz's Profile</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
-    <body>
+    <body onresize="changesize()">
     <menu>
-        <nav>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
+        <nav id="iten">
             <ul>
                 <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
@@ -18,7 +20,6 @@
             </ul>
         </nav>
     </menu>
-
     <div class="clear"></div>
         <div class="home" id="home">
             <div class="sidebar show-sidebar">
@@ -30,16 +31,19 @@
                 </div>
             </div>
             <div class="d1">
-                <h1>Bem vindo(a)</h1>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo earum, recusandae debitis vel voluptates error dolore dolorem in repellendus minus sed eius illo provident quis fuga modi quo? Facilis, nesciunt.
+                <h1 style="text-align: left; margin-left: 30px;">Hi, </h1>
+                <p>wellcome to my profile, my name is Laiz...</p>
+                <!-- <ul>
+                    <li></li>
+                </ul> -->
             </div>
             <div class="d2">
-                O que será apresentado?
-                <ul>
-                    <li>Um pouco sobre minha pessoa</li>
-                    <li>Alguns projetos que fiz/participei</li>
-                    <li></li>
-                </ul>
+                <h2>?????</h2>
+                    <ul>
+                        <li>Things about me?</li>
+                        <li>Some projects that I made or participated</li>
+                        <li></li>
+                    </ul>
             </div>
         </div>
     <!-- </div> -->

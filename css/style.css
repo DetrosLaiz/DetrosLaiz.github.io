@@ -55,6 +55,76 @@ menu li a:hover{
     background-color: #1a242f;
     border-radius: 5px;
 }
+
+#burguer {
+    color: var(--color06);
+    display: block;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: #0000001e;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* tablets */
+
+    /* HEADER */
+
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    /* CONTACT */
+
+    .ctt > a {
+        padding-left: 14px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    /* HEADER */
+
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+    }
+
+    /* CONTACT */
+
+    .ctt > a {
+        padding-left: 14px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+
+    /* ul {
+        columns: 2;
+    } */
+
+}
+
 /* SIDEBAR */
 .sidebar {
     position: sticky;
@@ -94,21 +164,12 @@ menu li a:hover{
     background-color: #1a242f;
     border-radius: 5px;
 }
-
-
-/* BODY */
-main {
-    max-width: 1000px;
-    margin: 0 auto 0;
-    overflow-y: auto;
-    color: white;
-}
 /* first page */
 .home {
     background-color: #0a0a0a;
     background: linear-gradient( #0a0a0a 65%, #121212 );
     display: flex;
-    margin-top: 55px;
+    /* margin-top: 55px; */
     height: 125vh;
     width: 100%;
     flex-direction: row;
@@ -116,13 +177,27 @@ main {
 }
 
 .d1, .d2 {
+    width: 40%;
     max-width: 50%;
-    margin: 16% 30px; /* top, right, bottom, left */
-    text-align: center;
+    height: 30%;
+    margin: 15% 30px; /* top, right, bottom, left */
+    align-content: center;
 }
 
 .d1 {
-    border: 1px dashed darkcyan; 
+    border-right: 1px dashed darkcyan;
+}
+
+.d1 > p {
+    margin-left: 30px;
+}
+
+/* BODY */
+main {
+    max-width: 1000px;
+    margin: 0 auto 0;
+    overflow-y: auto;
+    color: white;
 }
 
 
